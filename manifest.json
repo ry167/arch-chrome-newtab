@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Arch NewTab",
+	"description": "New Tab Page for Arch Linux",
+	"version": "0.1",
+	"author": "Ry167",
+	"incognito":"split",
+	"chrome_url_overrides": {
+	  "newtab":"newtab.html"
+	},
+	"permissions":[
+		"https://*.twitter.com/*",
+		"https://*.twimg.com/*"
+	],
+	"content_security_policy": "script-src 'self' https://platform.twitter.com/ https://*.twimg.com/; object-src 'self'"
+}
